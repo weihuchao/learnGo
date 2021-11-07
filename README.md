@@ -7,11 +7,14 @@
 - 国内下载：https://studygolang.com/dl
 
 - 国内镜像：https://goproxy.cn/
+
     - 设置代理
+
     - ```bash
-$ go env -w GO111MODULE=on 
-$ go env -w GOPROXY=https://goproxy.cn,direct
+    $ go env -w GO111MODULE=on
+    $ go env -w GOPROXY=https://goproxy.cn,direct
     ```
+
 - IDE
 
     - Goland/Idea + Go插件
@@ -34,7 +37,7 @@ $ go env -w GOPROXY=https://goproxy.cn,direct
         - 向前（forward）；
         - 后退（back）；
         - 跳转到定义（go to declaration）；
-    - 运行文件旁边有个设置配置，可以设置`run kind`来保证运行的是文件而不是package；
+    -  运行文件旁边有个设置配置，可以设置`run kind`来保证运行的是文件而不是package；
 
 ### 1.2 基础部分
 
