@@ -7,13 +7,11 @@
 - 国内下载：https://studygolang.com/dl
 
 - 国内镜像：https://goproxy.cn/
-
     - 设置代理
-
     - ```bash
-  $ go env -w GO111MODULE=on $ go env -w GOPROXY=https://goproxy.cn,direct
+$ go env -w GO111MODULE=on 
+$ go env -w GOPROXY=https://goproxy.cn,direct
     ```
-
 - IDE
 
     - Goland/Idea + Go插件
