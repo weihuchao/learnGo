@@ -41,7 +41,7 @@ func reSlice() {
 }
 
 /*
-slice:
+slice的实现, 组成部分:
 	ptr
 	len
 	cap
@@ -68,9 +68,10 @@ func extendSlice() {
 
 /*
 append函数的功效
-	修改数组对应索引位置的值
-	传入的slice不会变化
-	返回新的slice, 这个新的slice实际上就是对array的向后view
+	修改数组对应索引位置的值;
+	传入的slice不会变化;
+	返回新的slice, 这个新的slice实际上就是对array的向后view;
+	之所以有函数返回值, 是因为slice经过append之后里面的ptr/len/cap都可能发生变化
 	如果数组长度不足, 会拷贝出相同内容的数组, 但是cap更大, 再更改新数组的具体位置的值
 		后续仍然是不改变源slice
 		新返回一个slice, 这个slice指向新的array
@@ -150,7 +151,7 @@ func useSlice() {
 
 	fmt.Println("删除s3[3] >:")
 	// 删除s3[3]
-	// 使用...来开序列
+	// 使用...来展开序列
 	s3 = append(s3[:3], s3[4:]...)
 	showSliceInfo(s3, true)
 

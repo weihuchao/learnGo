@@ -23,7 +23,7 @@ type Node struct {
 给结构体定义方法
 	前面放上(node Node)就可以, 叫接受者, 相当于self/this
 	可以直接被node.print()点出来
-	(node Node)这个是值传递
+	(node Node)这个是值传递, 值传递时, 如果对传入的对象进行修改, 修改只会在这个函数生效
 	需要引用传递需要定义(node *Node)
 
 	必须要放在一个包内, 但是可以是不同的文件
